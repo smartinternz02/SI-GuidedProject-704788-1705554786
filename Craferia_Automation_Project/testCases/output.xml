@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.13 on linux)" generated="2024-01-22T14:46:10.317933" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Web Login User" source="/workspaces/smartinternzsofttestingproject/Craferia_Automation_Project/testCases/Test_Web_Login_User.robot">
+<test id="s1-t1" name="CRAFERIA-111: Login to Craferia application" line="9">
+<kw name="Setup Browser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-22T14:46:10.465325" level="FAIL">Variable '${BASE_URL}' not found.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>${HEADLESS}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-01-22T14:46:10.464602" elapsed="0.000775">Variable '${BASE_URL}' not found.</status>
+</kw>
+<status status="FAIL" start="2024-01-22T14:46:10.463796" elapsed="0.001736">Variable '${BASE_URL}' not found.</status>
+</kw>
+<kw name="Login as ${craferia_user_info['username']}">
+<arg>${craferia_user_info['password']}</arg>
+<status status="NOT RUN" start="2024-01-22T14:46:10.467191" elapsed="0.000037"/>
+</kw>
+<kw name="Verify the Craferia Dashboard page is visible">
+<status status="NOT RUN" start="2024-01-22T14:46:10.467480" elapsed="0.000055"/>
+</kw>
+<kw name="Log out">
+<status status="NOT RUN" start="2024-01-22T14:46:10.467803" elapsed="0.000037"/>
+</kw>
+<tag>Login</tag>
+<tag>Smoke</tag>
+<status status="FAIL" start="2024-01-22T14:46:10.463175" elapsed="0.004889">Variable '${BASE_URL}' not found.</status>
+</test>
+<status status="FAIL" start="2024-01-22T14:46:10.319373" elapsed="0.149264"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Login</stat>
+<stat pass="0" fail="1" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test Web Login User">Test Web Login User</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
